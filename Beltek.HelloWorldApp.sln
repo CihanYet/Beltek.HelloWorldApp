@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beltek.HelloWorldApp", "Beltek.HelloWorldApp\Beltek.HelloWorldApp.csproj", "{C46C847D-947D-496F-AAFB-A36A5AEA8ECD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C46C847D-947D-496F-AAFB-A36A5AEA8ECD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C46C847D-947D-496F-AAFB-A36A5AEA8ECD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C46C847D-947D-496F-AAFB-A36A5AEA8ECD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C46C847D-947D-496F-AAFB-A36A5AEA8ECD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {23202677-4FEA-4A41-BB0E-FBA2172269D3}
+	EndGlobalSection
+EndGlobal
