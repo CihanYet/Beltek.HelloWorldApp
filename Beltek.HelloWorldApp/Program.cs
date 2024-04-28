@@ -6,29 +6,152 @@ namespace Beltek.HelloWorldApp
         static int number = 10;
         static void Main(string[] args)
         {
+            //double maas = 5000;
+            //maas += 1000;
+            //Console.WriteLine(maas);
 
-            try
+            //Console.WriteLine("Bir sayı giriniz:");
+            //int sayi1 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Bir sayı daha giriniz:");
+            //int sayi2 = int.Parse(Console.ReadLine());
+            //string sonuc = sayi1 > sayi2 ? "Sayı 1 Büyüktür" : "Sayı 2 büyüktür yada sayılar eşittir";
+            //Console.WriteLine(sonuc);
+
+            //Console.WriteLine("Bir sayı giriniz:");
+            //int sayi1 = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Bir sayı daha giriniz:");
+            //int sayi2 = int.Parse(Console.ReadLine());
+            //if (sayi1 > sayi2)
+            //{
+            //    Console.WriteLine("Sayı 1 büyüktür");
+            //}
+            //else if (sayi2 > sayi1)
+            //{
+            //    Console.WriteLine("Sayı 2 büyüktür");
+            //}           
+            //else
+            //{
+            //    Console.WriteLine("Sayılar eşittir");
+            //}
+
+            //Hava nasıl?
+            //Güzel
+            //Dışarı çık
+            //Kötü
+            //Evde Otur
+            //Sadece güzel veya kötü cevapları verebilirsiniz.
+
+            //try
+            //{
+            //    Console.WriteLine("Hava nasıl?");
+            //    string durum = Console.ReadLine().ToLower();
+            //    if (durum == "güzel")
+            //    {
+            //        Console.WriteLine("Kaç derece?");
+            //        sbyte derece = sbyte.Parse(Console.ReadLine());
+            //        if (derece < 10)
+            //        {
+            //            Console.WriteLine("Hava soğuk evde otur");
+            //        }
+            //        else if (derece >= 10 && derece <= 30)
+            //        {
+            //            Console.WriteLine("Hava güzel dışarı çık");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Çok sıcak evde otur");
+            //        }
+            //    }
+            //    else if (durum == "kötü")
+            //    {
+            //        Console.WriteLine("Evde otur");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Sadece güzel/kötü değeri girilebilir.");
+            //    }
+            //}
+            //catch(OverflowException)
+            //{
+
+            //}
+            //catch(FormatException)
+            //{
+
+            //}
+            //catch (Exception)
+            //{
+            //    Console.WriteLine("Bir hata oluştu!");
+            //}
+
+
+
+            //Console.WriteLine("1-Havale\n2-Eft\n3-İnternet Bankacılığı\n4-Müşteri Hizmetleri");
+            //byte secim = byte.Parse(Console.ReadLine());
+            //if (secim == 1)
+            //{
+            //    Console.WriteLine("Havale işlemleri");
+            //}
+            //else if (secim == 2)
+            //{
+            //    Console.WriteLine("Eft işlemleri");
+            //}
+            //else if (secim == 3)
+            //{
+            //    Console.WriteLine("İnternet bankacılığı");
+            //}
+            //else if (secim == 4)
+            //{
+            //    Console.WriteLine("Müşteri hizmetleri");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Hatalı giriş yaptınız");
+            //}
+
+            //switch (secim)
+            //{
+            //    case 1:
+            //        Console.WriteLine("Havale işlemleri");
+            //        break;
+            //    case 2:
+            //        Console.WriteLine("Eft işlemleri");
+            //        break;
+            //    case 3:
+            //        Console.WriteLine("İnternet bankacılığı");
+            //        break;
+            //    case 4:
+            //        Console.WriteLine("Müşteri Hizmetleri");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Hatalı giriş yaptınız");
+            //        break;
+            //}
+
+            Console.WriteLine("Şekil seçiniz:\n1-Kare\n2-Daire\n3-Üçgen");
+            byte secim = byte.Parse(Console.ReadLine());
+            switch (secim)
             {
-                Console.WriteLine("Adınızı Giriniz:");
-                string isim = Console.ReadLine();
-                Console.WriteLine("Soyadını Giriniz:");
-                string soyad = Console.ReadLine();
-                Console.WriteLine("Yaşınızı giriniz:");
-                byte yas = byte.Parse(Console.ReadLine());
-                Console.WriteLine($"Adınız:{isim}\nSoyadınız:{soyad}\nYaşınız:{yas}");
-                Console.ReadKey();
-            }
-            catch (OverflowException)
-            {
-                Console.WriteLine("0-255 arası değer girebilirsiniz.");
-            }
-            catch (FormatException)
-            {
-                Console.WriteLine("Yaşınızı sayı ile giriniz");
-            }
-            catch (Exception)
-            {
-                Console.WriteLine("Bilinmeyen bir hata oluştu!");
+                case 1:
+                    Console.WriteLine("Bir kenar uzunluğunu giriniz:");
+                    byte kenar = byte.Parse(Console.ReadLine());
+                    Console.WriteLine($"Karenin alanı:{kenar * kenar}");
+                    break;
+                case 2:
+                    Console.WriteLine("Yarıçap giriniz:");
+                    byte yaricap = byte.Parse(Console.ReadLine());
+                    Console.WriteLine($"Dairenin alanı:{Math.PI * yaricap * yaricap}");
+                    break;
+                case 3:
+                    Console.WriteLine("Taban uzunluğu giriniz:");
+                    byte taban = byte.Parse(Console.ReadLine());
+                    Console.WriteLine("Yüksekliği giriniz:");
+                    byte yukseklik = byte.Parse(Console.ReadLine());
+                    Console.WriteLine($"Üçgenin alanı:{(taban * yukseklik) / 2}");
+                    break;
+                default:
+                    Console.WriteLine("Hatalı seçim");
+                    break;
             }
         }
     }
@@ -84,6 +207,33 @@ namespace Beltek.HelloWorldApp
 //int sonuc = (int)number + sayi2;//Unboxing 
 #endregion
 
+#region Exception Handling
+//Exception Handling
+//try
+//{
+//    Console.WriteLine("Adınızı Giriniz:");
+//    string isim = Console.ReadLine();
+//    Console.WriteLine("Soyadını Giriniz:");
+//    string soyad = Console.ReadLine();
+//    Console.WriteLine("Yaşınızı giriniz:");
+//    byte yas = byte.Parse(Console.ReadLine());
+//    Console.WriteLine($"Adınız:{isim}\nSoyadınız:{soyad}\nYaşınız:{yas}");
+//    Console.ReadKey();
+//}
+//catch(FormatException)
+//{
+//    Console.WriteLine("Yaşınızı sayı ile giriniz.");    
+//} 
+//catch(OverflowException)
+//{
+//    Console.WriteLine("Yaşınızı 0-255 arası girebilirsiniz..");
+//}
+//catch (Exception)
+//{
+//    Console.WriteLine("Bir hata oluştu");
+//} 
+#endregion
+
 //Solution: İçerisinde birden fazla proje bulundurabilen dosyalardır. Solution dosyaları, bu projelerin disk üzerinde kayıtlı oldugu yer bilgisini tutarlar(Path).
 //namespace: İçinde classları bulunduran yapılardır.
 //{} Scope(Blok) Yapıları:Bu yapılar içerisine birden fazla satır kod yazılabilir.
@@ -100,3 +250,15 @@ namespace Beltek.HelloWorldApp
 //Debug: Hata ayıklama F5 ile başlatılır.
 
 //Handled Exception: Try catch ile yakalanmış ve exception durumunda yapılacak işlemlerin tanımlandığı durumdur.
+
+//Metod Parametresi: Metodların işlerini yapabilmek için ihtiyaç duydukları verilere denir ve metod parantezleri içerisinde metoda gönderilir.
+
+// 1 && 1 = 1
+// 1 && 0 = 0
+// 0 && 1 = 0
+// 0 && 0 = 0
+
+// 1 || 1 = 1
+// 1 || 0 = 1
+// 0 || 1 = 1
+// 0 || 0 = 0
