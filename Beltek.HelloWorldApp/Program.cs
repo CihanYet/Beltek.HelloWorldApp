@@ -6,9 +6,11 @@ namespace Beltek.HelloWorldApp
         static int number = 10;
         static void Main(string[] args)
         {
-            //double maas = 5000;
+            //double maas = 5000;            
             //maas += 1000;
             //Console.WriteLine(maas);
+
+            //Console.WriteLine(5 % 2 == 1 || 1 == 2);
 
             //Console.WriteLine("Bir sayı giriniz:");
             //int sayi1 = int.Parse(Console.ReadLine());
@@ -28,11 +30,13 @@ namespace Beltek.HelloWorldApp
             //else if (sayi2 > sayi1)
             //{
             //    Console.WriteLine("Sayı 2 büyüktür");
-            //}           
+            //}
             //else
             //{
             //    Console.WriteLine("Sayılar eşittir");
             //}
+
+
 
             //Hava nasıl?
             //Güzel
@@ -40,6 +44,51 @@ namespace Beltek.HelloWorldApp
             //Kötü
             //Evde Otur
             //Sadece güzel veya kötü cevapları verebilirsiniz.
+
+            //try
+            //{
+            //    Console.WriteLine("Hava nasıl?");
+            //    string cevap = Console.ReadLine().ToLower();
+            //    if (cevap == "güzel")
+            //    {
+            //        Console.WriteLine("Kaç Derece?");
+            //        sbyte derece = sbyte.Parse(Console.ReadLine());
+            //        if (derece <= 10)
+            //        {
+            //            Console.WriteLine("Hava soğuk, evde otur");
+            //        }
+            //        else if (derece > 10 && derece <= 35)
+            //        {
+            //            Console.WriteLine("Hava güzel,dışarı çık");
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Çok sıcak,evde otur.");
+            //        }
+            //    }
+            //    else if (cevap == "kötü")
+            //    {
+            //        Console.WriteLine("Evde otur");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Sadece güzel/kötü değerleri girebilirsiniz.");
+            //    }
+            //}
+            //catch(FormatException)
+            //{
+            //    Console.WriteLine("Sadece rakamla giriş yapınız.");
+            //}
+            //catch(OverflowException)
+            //{
+            //    Console.WriteLine("-127 ile +128 arası değer girebilirsiniz.");
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine($"Message:{ex.Message}\nDate:{DateTime.Now}\nStack Trace:{ex.StackTrace}");
+            //    Console.WriteLine("Bilinmeyen hata oluştu!");
+            //}
+
 
             //try
             //{
@@ -135,12 +184,12 @@ namespace Beltek.HelloWorldApp
                 case 1:
                     Console.WriteLine("Bir kenar uzunluğunu giriniz:");
                     byte kenar = byte.Parse(Console.ReadLine());
-                    Console.WriteLine($"Karenin alanı:{kenar * kenar}");
+                    Console.WriteLine($"Karenin alanı:{Math.Pow(kenar, 2)}");
                     break;
                 case 2:
                     Console.WriteLine("Yarıçap giriniz:");
                     byte yaricap = byte.Parse(Console.ReadLine());
-                    Console.WriteLine($"Dairenin alanı:{Math.PI * yaricap * yaricap}");
+                    Console.WriteLine($"Dairenin alanı:{Math.PI * Math.Pow(yaricap, 2)}");
                     break;
                 case 3:
                     Console.WriteLine("Taban uzunluğu giriniz:");
