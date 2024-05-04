@@ -177,31 +177,31 @@ namespace Beltek.HelloWorldApp
             //        break;
             //}
 
-            Console.WriteLine("Şekil seçiniz:\n1-Kare\n2-Daire\n3-Üçgen");
-            byte secim = byte.Parse(Console.ReadLine());
-            switch (secim)
-            {
-                case 1:
-                    Console.WriteLine("Bir kenar uzunluğunu giriniz:");
-                    byte kenar = byte.Parse(Console.ReadLine());
-                    Console.WriteLine($"Karenin alanı:{Math.Pow(kenar, 2)}");
-                    break;
-                case 2:
-                    Console.WriteLine("Yarıçap giriniz:");
-                    byte yaricap = byte.Parse(Console.ReadLine());
-                    Console.WriteLine($"Dairenin alanı:{Math.PI * Math.Pow(yaricap, 2)}");
-                    break;
-                case 3:
-                    Console.WriteLine("Taban uzunluğu giriniz:");
-                    byte taban = byte.Parse(Console.ReadLine());
-                    Console.WriteLine("Yüksekliği giriniz:");
-                    byte yukseklik = byte.Parse(Console.ReadLine());
-                    Console.WriteLine($"Üçgenin alanı:{(taban * yukseklik) / 2}");
-                    break;
-                default:
-                    Console.WriteLine("Hatalı seçim");
-                    break;
-            }
+            //Console.WriteLine("Şekil seçiniz:\n1-Kare\n2-Daire\n3-Üçgen");
+            //byte secim = byte.Parse(Console.ReadLine());
+            //switch (secim)
+            //{
+            //    case 1:
+            //        Console.WriteLine("Bir kenar uzunluğunu giriniz:");
+            //        byte kenar = byte.Parse(Console.ReadLine());
+            //        Console.WriteLine($"Karenin alanı:{Math.Pow(kenar, 2)}");
+            //        break;
+            //    case 2:
+            //        Console.WriteLine("Yarıçap giriniz:");
+            //        byte yaricap = byte.Parse(Console.ReadLine());
+            //        Console.WriteLine($"Dairenin alanı:{Math.PI * Math.Pow(yaricap, 2)}");
+            //        break;
+            //    case 3:
+            //        Console.WriteLine("Taban uzunluğu giriniz:");
+            //        byte taban = byte.Parse(Console.ReadLine());
+            //        Console.WriteLine("Yüksekliği giriniz:");
+            //        byte yukseklik = byte.Parse(Console.ReadLine());
+            //        Console.WriteLine($"Üçgenin alanı:{(taban * yukseklik) / 2}");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Hatalı seçim");
+            //        break;
+            //}
         }
     }
 }
