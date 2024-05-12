@@ -77,8 +77,15 @@
             //{
             //    sonuc *= taban;
             //}
-
             //Console.WriteLine(sonuc);
+
+            //int result = 1; 
+            //for (int i = 0; i < 20; i++)
+            //{
+            //    result = result * 2;
+            //}
+            //Console.WriteLine(result);
+
 
             //Console.WriteLine("Sayı giriniz:");
             //int sayi = int.Parse(Console.ReadLine());
@@ -89,15 +96,28 @@
             //}
             //Console.WriteLine($"İşlemin sonucu:{sonuc}");
 
+            //int result = 1;            
+            //result = result * 2;
+            //result = result * 3;
+
+
 
             //Console.WriteLine("Sayı giriniz:");
             //int sayi = int.Parse(Console.ReadLine());
             //int sayac = 0;
+            //for (int i = 2; i <= sayi / 2; i++)
+            //{
+            //    if (sayi % i == 0)
+            //    {
+            //        sayac++;
+            //        break;
+            //    }
+            //}
+            //Console.WriteLine(sayac == 0 ? "Asal" : "Asal değil");
 
-            ////8
-            ////2 3 4 5 6 7 
 
-            //for (int i = 2; i <= sayi/2; i++)
+
+            //for (int i = 2; i <= sayi / 2; i++)
             //{
             //    if (sayi % i == 0)
             //    {
@@ -128,7 +148,6 @@
 
 
 
-
             //Sayı giriniz:
             //5
             //Devam etmek istiyor musunuz?E
@@ -140,30 +159,110 @@
             //Girilen sayıların en büyüğü:10
 
 
-            int max = int.MinValue, toplam = 0;
+            //int max = int.MinValue, toplam = 0;
 
-            for (; ; )
-            {
-                Console.WriteLine("Sayı giriniz:");
-                int sayi = int.Parse(Console.ReadLine());
-                if (sayi > max)
-                {
-                    max = sayi;
-                }
+            //for (; ; )
+            //{
+            //    Console.WriteLine("Sayı giriniz:");
+            //    int sayi = int.Parse(Console.ReadLine());
+            //    if (sayi > max)
+            //    {
+            //        max = sayi;
+            //    }
 
-                if (sayi % 2 == 0)
-                {
-                    toplam += sayi;
-                }
-                Console.WriteLine("Devam etmek istiyor musunuz?(e/h)");
-                char cevap = char.Parse(Console.ReadLine());
-                if (cevap == 'h')
-                {
-                    Console.WriteLine($"Girilen en büyük sayı:{max}\nGirilen Çift sayıların toplamı:{toplam}");
-                    break;
-                }
-            }
-            //5*4*3*2
+            //    if (sayi % 2 == 0)
+            //    {
+            //        toplam += sayi;
+            //    }
+            //    Console.WriteLine("Devam etmek istiyor musunuz?(e/h)");
+            //    char cevap = char.Parse(Console.ReadLine());
+            //    if (cevap == 'h')
+            //    {
+            //        Console.WriteLine($"Girilen en büyük sayı:{max}\nGirilen Çift sayıların toplamı:{toplam}");
+            //        break;
+            //    }
+            //}
+
+            //while (1 == 1)
+            //{
+            //    Console.WriteLine("Gazi");
+            //}
+
+
+            //for (int i = 0; i < 3; i++)
+            //{
+
+            //}
+
+
+            //int sayac = 0;
+            //while (sayac < 5)
+            //{
+            //    sayac++;
+            //}
+
+
+            //var rnd = new Random();
+            //int sayi = rnd.Next(100);
+            ////Console.WriteLine(sayi);
+            //int sayac = 0;
+            //while (sayac < 3)
+            //{
+            //    Console.WriteLine("Sayı giriniz:");
+            //    int number = int.Parse(Console.ReadLine());
+            //    if (number == sayi)
+            //    {
+            //        Console.WriteLine("Tebrikler bildiniz!");
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Bilemediniz..Tekrar deneyiniz..");
+            //    }
+            //    sayac++;
+            //}
+
+
+            //var rnd = new Random();
+            //int random = rnd.Next(100);
+            //int sayac = 0;
+            //do
+            //{
+            //    Console.WriteLine("Sayı giriniz:");
+            //    int number = int.Parse(Console.ReadLine());
+            //    if (number == random)
+            //    {
+            //        Console.WriteLine("Tebrikler bildiniz!");
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Bilemediniz..Tekrar deneyiniz..");
+            //    }
+            //    sayac++;
+            //} while (sayac < 3);
+
+
+            //Bir sayı giriniz:5
+            //Devam/Tamam:d
+            //Bir sayı giriniz:10
+            //Devan/Tamam:t
+            //Girilen sayıların toplamı:15
+
+            //int toplam = 0;
+            //char cevap;
+            //do
+            //{
+            //    Console.WriteLine("Bir sayı giriniz:");
+            //    int sayi = int.Parse(Console.ReadLine());
+            //    toplam = toplam + sayi;
+            //    Console.WriteLine("Tamam/Devam?");
+            //    cevap = char.Parse(Console.ReadLine());
+            //} while (cevap == 'd');
+
+            //Console.WriteLine($"Girilen sayıların toplamı:{toplam}");
+
+            
         }
     }
 }

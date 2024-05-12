@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beltek.HelloWorldApp", "Bel
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beltek.DongulerApp", "Beltek.DongulerApp\Beltek.DongulerApp.csproj", "{C314ADF1-E93E-46CC-8759-427227098375}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Beltek.DizilerApp", "Beltek.DizilerApp\Beltek.DizilerApp.csproj", "{ABFAAE04-D0C5-4BC5-A2DA-669F3129FC59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Beltek.MetodlarApp", "Beltek.MetodlarApp\Beltek.MetodlarApp.csproj", "{8236BD0D-11AF-4F64-9B4F-AE38F9D39705}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{C314ADF1-E93E-46CC-8759-427227098375}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C314ADF1-E93E-46CC-8759-427227098375}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C314ADF1-E93E-46CC-8759-427227098375}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABFAAE04-D0C5-4BC5-A2DA-669F3129FC59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABFAAE04-D0C5-4BC5-A2DA-669F3129FC59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABFAAE04-D0C5-4BC5-A2DA-669F3129FC59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABFAAE04-D0C5-4BC5-A2DA-669F3129FC59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8236BD0D-11AF-4F64-9B4F-AE38F9D39705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8236BD0D-11AF-4F64-9B4F-AE38F9D39705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8236BD0D-11AF-4F64-9B4F-AE38F9D39705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8236BD0D-11AF-4F64-9B4F-AE38F9D39705}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
